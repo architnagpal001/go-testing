@@ -4,21 +4,20 @@ import "fmt"
 
 func main() {
 	//Enter your code here. Read input from STDIN. Print output to STDOUT
-	var num int
+	var n int
 	sum := 0
 	fmt.Println("Enter a number :")
-	fmt.Scanln(&num)
+	fmt.Scanln(&n)
 
-	for i := 1; i < num; i++ {
-		if num%i == 0 {
+	for i := 1; i < n; i++ {
+		if n%i == 0 {
 			sum = sum + i
 		}
 	}
-	if sum==num {
+	if sum==n {
 		fmt.Println("1")
 	} else {
 		fmt.Println("0")
-	}
+	} 
 
 }
-// 1,2,4,8,16,32
